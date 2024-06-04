@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сервіс для завантаження даних</title>
+    <link rel="stylesheet" href="./css/styley.css">
+    <script src="./js/scripts.js"></script>
+</head>
+<body>
+    <h1>Сервіс для завантаження даних з ресурсу</h1>
+    <input type="text" id="urlInput" placeholder="ENTER URL">
+    <button id="loadDataButton" class="btn green">ЗАВАНТАЖИТИ ДАНІ</button>
+    <button id="clearButton" class="btn purple" disabled>ОЧИСТИТИ</button>
+    <p id="statusMessage"></p>
+    <div id="dataDisplay">
+        <p>Відобразити ваш варіант таблиці?</p>
+        <button id="showTableButton" class="btn green">ТАК</button>
+        <button id="hideTableButton" class="btn red">НІ</button>
+    </div>
+    <table id="dataTable">
+        <thead>
+            <tr>
+                <th data-column="id">ID   </th>
+                <th data-column="username">USERNAME</th>
+                <th data-column="phone">PHONE</th>
+                <th data-column="website">WEBSITE</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <button id="clearSortButton" class="btn pink">ОЧИСТИТИ СОРТУВАННЯ</button>
+</body>
+</html>

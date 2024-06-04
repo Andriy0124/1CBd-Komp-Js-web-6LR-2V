@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+}
+
+input[type="text"] {
+    margin: 10px;
+    padding: 5px;
+    width: 300px;
+}
+
+.btn {
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.green {
+    background-color: #4CAF50;
+}
+
+.purple {
+    background-color: #9C27B0;
+}
+
+.red {
+    background-color: #F44336;
+}
+
+.pink {
+    background-color: #E91E63;
+}
+
+#dataDisplay, #dataTable, #clearSortButton {
+    display: none;
+    margin-top: 20px;
+}
+
+#dataTable {
+    margin: 20px auto;
+    border-collapse: separate;
+    border-spacing: 0 10px;
+    width: 80%;
+}
+
+#dataTable th, #dataTable td {
+    border: 5px solid #ffffff;
+    padding: 8px;
+}
+
+#dataTable th {
+    background-color: #f2ae4a;
+    cursor: pointer;
+    position: relative;
+}
+
+#dataTable th.sorted {
+    background-color: #e34cb9;
+}
+
+#dataTable th::after {
+    content: '↕';
+    position: absolute;
+    right: 8px;
+}
+
+#dataTable th.sorted.asc::after {
+    content: '↑';
+}
+
+#dataTable th.sorted.desc::after {
+    content: '↓';
+}
+
+#dataTable tbody tr:nth-child(odd) {
+    background-color: #f3e0b0;
+}
+
+#dataTable tbody tr:nth-child(even) {
+    background-color: #f1c584;
+}
+
+#dataTable tbody tr + tr {
+    border-top: 10px solid transparent;
+}
